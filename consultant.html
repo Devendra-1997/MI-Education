@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultant Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .consultant-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2,
+      h3 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+
+      ul {
+        list-style-type: disc;
+        color: #555;
+        padding-left: 20px;
+      }
+
+      a {
+        color: #4caf50;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .availability {
+        margin-top: 20px;
+      }
+
+      .availability label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .availability select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .availability button {
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        background-color: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .availability button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="consultant-container">
+      <h2>Welcome, [Consultant Name]!</h2>
+      <p>
+        This is your personalized consultant page where you can manage your
+        schedule, communicate with students, and stay updated on appointments.
+      </p>
+
+      <h3>Upcoming Appointments</h3>
+      <ul>
+        <li>Appointment with [Student Name] on [Date] at [Time]</li>
+        <!-- Add more upcoming appointments as needed -->
+      </ul>
+
+      <h3>Availability</h3>
+      <div class="availability">
+        <label for="time">Set your availability:</label>
+        <select id="time" name="time">
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+        </select>
+        <button type="button">Update Availability</button>
+      </div>
+    </div>
+  </body>
+</html>
