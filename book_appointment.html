@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Appointment</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .booking-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2,
+      h3 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #555;
+        line-height: 1.6;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        width: 100%;
+        padding: 10px;
+        border: 0;
+        background-color: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="booking-container">
+      <h2>Book Appointment</h2>
+      <p>
+        Choose your preferred consultant and schedule an appointment for
+        personalized guidance.
+      </p>
+
+      <form action="submit_appointment.php" method="post">
+        <label for="consultant">Select Consultant:</label>
+        <select id="consultant" name="consultant" required>
+          <option value="consultant1">Consultant 1</option>
+          <option value="consultant2">Consultant 2</option>
+          <!-- Add more consultants as needed -->
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required />
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </body>
+</html>
