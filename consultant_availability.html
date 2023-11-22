@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultant Availability</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+
+      .availability-container {
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      label {
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      select,
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+
+      button {
+        padding: 10px;
+        border: 0;
+        background-color: #4caf50;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="availability-container">
+      <h2>Set Consultant Availability</h2>
+
+      <form action="submit_availability.php" method="post">
+        <label for="day">Select Day:</label>
+        <select id="day" name="day" required>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <!-- Add more days as needed -->
+        </select>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required />
+
+        <label for="time">Select Time:</label>
+        <select id="time" name="time" required>
+          <option value="morning">Morning</option>
+          <option value="afternoon">Afternoon</option>
+          <option value="evening">Evening</option>
+          <!-- Add more time slots as needed -->
+        </select>
+
+        <button type="submit">Set Availability</button>
+      </form>
+    </div>
+  </body>
+</html>
